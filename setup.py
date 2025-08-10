@@ -33,7 +33,7 @@ setuptools.setup(
     url="https://github.com/raphael-prevost/netron-export",
     packages=setuptools.find_packages(),
     install_requires=[
-        "netron @ git+https://github.com/raphael-prevost/netron.git@v7.6.5#subdirectory=dist/pypi",
+        "netron",
         # for python 3.12, we need greenlet>=3.0, which comes first with playwright>=1.39
         "playwright==1.37.0" if sys.version_info[1] < 12 else "playwright==1.39.0"
     ],
