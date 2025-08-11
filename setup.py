@@ -23,14 +23,14 @@ with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="netron-export",
+    name="netron-export-custom",
     version=get_version("netron_export/__init__.py"),
-    author="ImFusion GmbH",
-    author_email="info@imfusion.com",
+    author="FREE LEARN",
+    author_email="biju.official@gmail.com",
     description="A helper package for plotting and exporting netron graph figures as a PNG or SVG file.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/raphael-prevost/netron-export",
+    url="https://github.com/freelearn2000/netron-export-custom",
     packages=setuptools.find_packages(),
     install_requires=[
         "netron",
