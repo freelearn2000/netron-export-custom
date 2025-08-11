@@ -72,6 +72,11 @@ async def save_model_graphs(netron_url: str, out_paths: List[str], horizontal_mo
                     await page.click("#menu-item-2-3", timeout=timeout)
                     # Re-open the menu
                     await page.click("#menu-button", timeout=timeout)
+                
+                # Click on the Show Attributes button
+                await page.click("#menu-item-2-0", timeout=timeout)
+                # Re-open the menu
+                await page.click("#menu-button", timeout=timeout)
 
                 # Start waiting for the download (triggered by netron when we click on the "Export to SVG" button)
                 async with page.expect_download() as download_info:
